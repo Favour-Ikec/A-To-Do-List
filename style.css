@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+  body{
+    background-image: url(images/sl_060323_59430_31.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    z-index: -1;
+    color:  aqua
+  }
+
+  h1{
+    font-weight: bolder;
+    font-size: 60px;
+    margin: -150px 0 40px;
+  }
+
+  .countdown{
+    display: flex;
+    transform: scale(2);
+  }
+
+
+  .time{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .time h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    line-height: 1;
+    margin: 0 0 5px;
+  }
+
+
+  @media(max-width: 700px) {
+    h1{
+      font-size: 35px;
+    }
+
+    .time{
+      margin: 5px;
+    }
+
+    .time h2{
+      font-size: 12px;
+    }
+
+    .time small{
+      font-size: 10px;
+    }
+
+
+  }
+
+
+ /*Celebration Messages*/
+
+ #celebration-message-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#celebration-message {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 36px;
+  padding: 20px;
+  border-radius: 10px;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
